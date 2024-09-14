@@ -1,0 +1,63 @@
+/* globals.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+.carousel-container {
+  width: 80%; /* Adjust as needed */
+  margin: auto;
+}
+
+.carousel-slide {
+  position: relative; /* Important for absolute positioning of text */
+  text-align: center;
+}
+
+.carousel-image {
+  width: 100%;
+  max-height: 500px; /* Adjust the maximum height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.carousel-text {
+  position: absolute;
+  top: 50%; /* Adjust to place the text vertically */
+  left: 50%; /* Adjust to place the text horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: rgb(221, 62, 22); /* Text color */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.carousel-text h1 {
+  margin: 0;
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
